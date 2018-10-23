@@ -20,25 +20,17 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="disable_mootools" type="radio" class="btn-group" default="0" description="Disable mootools in site" label="Mootools disable">
-					<option value="0">JNO</option>
-					<option value="1">JYES</option>
+				<field name="mootools" type="radio" class="btn-group" default="0" description="Mootools in site" label="Mootools">
+                    <option value="0">Disable</option>
+                    <option value="1">Enable</option>
 				</field>
-                <field name="disable_jquery" type="radio" class="btn-group" default="0" description="Disable jquery in site" label="Jquery disable">
-                    <option value="0">JNO</option>
-                    <option value="1">JYES</option>
+                <field name="jquery" type="radio" class="btn-group" default="0" description="jQuery in site" label="jQuery">
+                    <option value="0">Disable</option>
+                    <option value="1">Enable</option>
                 </field>
-                <field name="disable_bootstrap" type="radio" class="btn-group" default="0" description="Disable bootstrap in site" label="Bootstrap disable">
-                    <option value="0">JNO</option>
-                    <option value="1">JYES</option>
-                </field>
-                <field name="disable_laraveldump" type="radio" class="btn-group" default="0" description="Disable dump like Laravel" label="Disable dump like Laravel">
-                    <option value="0">JNO</option>
-                    <option value="1">JYES</option>
-                </field>
-                <field name="disable_is_json" type="radio" class="btn-group" default="0" description="Disable is_json function" label="Disable is_json function">
-                    <option value="0">JNO</option>
-                    <option value="1">JYES</option>
+                <field name="bootstrap" type="radio" class="btn-group" default="0" description="Bootstrap in site" label="Bootstrap">
+                    <option value="0">Disable</option>
+                    <option value="1">Enable</option>
                 </field>
 			</fieldset>
 		</fields>

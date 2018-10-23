@@ -20,15 +20,15 @@
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
-				<field name="mootools" type="radio" class="btn-group" default="0" description="Mootools in site" label="Mootools">
+				<field name="mootools" type="radio" class="btn-group" default="1" description="Mootools in site" label="Mootools">
                     <option value="0">Disable</option>
                     <option value="1">Enable</option>
 				</field>
-                <field name="jquery" type="radio" class="btn-group" default="0" description="jQuery in site" label="jQuery">
+                <field name="jquery" type="radio" class="btn-group" default="1" description="jQuery in site" label="jQuery">
                     <option value="0">Disable</option>
                     <option value="1">Enable</option>
                 </field>
-                <field name="bootstrap" type="radio" class="btn-group" default="0" description="Bootstrap in site" label="Bootstrap">
+                <field name="bootstrap" type="radio" class="btn-group" default="1" description="Bootstrap in site" label="Bootstrap">
                     <option value="0">Disable</option>
                     <option value="1">Enable</option>
                 </field>

@@ -11,10 +11,35 @@
 	<description><![CDATA[Joomla Dump like on Laravel and can disabled built-in libraries Jquery, bootstrap, Mootools]]></description>
 	<files>
 		<filename plugin="rtad_jdump">rtad_jdump.php</filename>
+		<filename>index.html</filename>
+		<filename>composer.json</filename>
+		<filename>composer.lock</filename>
+		<folder>lib</folder>
+		<folder>vendor</folder>
 	</files>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
+				<field name="disable_mootools" type="radio" class="btn-group" default="0" description="Disable mootools in site" label="Mootools disable">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+                <field name="disable_jquery" type="radio" class="btn-group" default="0" description="Disable jquery in site" label="Jquery disable">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="disable_bootstrap" type="radio" class="btn-group" default="0" description="Disable bootstrap in site" label="Bootstrap disable">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="disable_laraveldump" type="radio" class="btn-group" default="0" description="Disable dump like Laravel" label="Disable dump like Laravel">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="disable_is_json" type="radio" class="btn-group" default="0" description="Disable is_json function" label="Disable is_json function">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
 			</fieldset>
 		</fields>
 	</config>

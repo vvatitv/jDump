@@ -7,7 +7,7 @@
 	<license>GNU/GPL</license>
 	<authorEmail>vvatitv@gmail.com</authorEmail>
 	<authorUrl>https://rtad.ru</authorUrl>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<description><![CDATA[Joomla Dump like on Laravel and can disabled built-in libraries Jquery, bootstrap, Mootools]]></description>
 	<files>
 		<filename plugin="rtad_jdump">rtad_jdump.php</filename>

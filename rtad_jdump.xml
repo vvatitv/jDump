@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>RTAD Joomla Dump</name>
+	<author>Vladimir 'def' T.</author>
+	<creationDate>September 2018</creationDate>
+	<copyright>(c) Vladimir Titov 2018</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>vvatitv@gmail.com</authorEmail>
+	<authorUrl>https://rtad.ru</authorUrl>
+	<version>1.0.0</version>
+	<description></description>
+	<files>
+		<filename plugin="rtad_jdump">rtad_jdump.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			</fieldset>
+		</fields>
+	</config>
+    <updateservers>
+        <server type="extension" priority="1" name="RTAD Joomla Dump"><![CDATA[https://rtad.ru/joomla/plg_system_rtad_jdump.xml]]></server>
+    </updateservers>
+</extension>

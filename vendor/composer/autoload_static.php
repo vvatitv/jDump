@@ -13,10 +13,19 @@ class ComposerStaticInit90c04edbf15c4f8785c59927e8307abb
     );
 
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'Whoops\\Handler\\' => 15,
+            'Whoops\\' => 7,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
         ),
         'D' => 
         array (
@@ -25,6 +34,14 @@ class ComposerStaticInit90c04edbf15c4f8785c59927e8307abb
     );
 
     public static $prefixDirsPsr4 = array (
+        'Whoops\\Handler\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/whoops/soap/src',
+        ),
+        'Whoops\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
@@ -32,6 +49,10 @@ class ComposerStaticInit90c04edbf15c4f8785c59927e8307abb
         'Symfony\\Component\\VarDumper\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
         'Dd\\' => 
         array (

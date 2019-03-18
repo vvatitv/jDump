@@ -1,5 +1,7 @@
 {
     "require": {
-        "wanfeiyy/dd": "^1.0"
+        "wanfeiyy/dd": "^1.0",
+        "filp/whoops": "^2.3",
+        "whoops/soap": "^1.0"
     }
 }

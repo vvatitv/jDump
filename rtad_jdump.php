@@ -21,9 +21,13 @@ class plgSystemRtad_jdump extends JPlugin{
     }
 	public function onAfterInitialise(){
 
-		$_WHOOPS = new \Whoops\Run;
-		$_WHOOPS->pushHandler(new \Whoops\Handler\PrettyPageHandler);
-		$_WHOOPS->register();
+		$_CONFIG = JFactory::getConfig();
+
+		if( !empty($_CONFIG->get('error_reporting', 'default')) && $_CONFIG->get('error_reporting', 'default') != 'none' && $_CONFIG->get('error_reporting', 'default') != 'simple' ){
+			$_WHOOPS = new \Whoops\Run;
+			$_WHOOPS->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+			$_WHOOPS->register();
+		}
 		
 		if ( JFactory::getApplication()->isAdmin() ){
 			 return;

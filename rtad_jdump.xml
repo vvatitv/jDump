@@ -1,40 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.0" type="plugin" group="system" method="upgrade">
-	<name>RTAD Joomla Dump</name>
-	<author>Vladimir 'def' T.</author>
-	<creationDate>September 2018</creationDate>
+	<name>plg_system_rtad_jdump</name>
+	<author>Vladimir 'def' Titov.</author>
+	<creationDate>December 2019</creationDate>
 	<copyright>(c) Vladimir Titov 2018</copyright>
-	<license>GNU/GPL</license>
+	<license>https://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
 	<authorEmail>vvatitv@gmail.com</authorEmail>
 	<authorUrl>https://rtad.ru</authorUrl>
-	<version>2.0.0</version>
-	<description><![CDATA[Joomla Dump like on Laravel and can disabled built-in libraries Jquery, bootstrap, Mootools]]></description>
+	<version>3.0.0</version>
+	<description>PLG_SYSTEM_RTAD_JDUMP_DESCRIPTION</description>
 	<files>
 		<filename plugin="rtad_jdump">rtad_jdump.php</filename>
 		<filename>index.html</filename>
-		<filename>composer.json</filename>
-		<folder>lib</folder>
+		<folder>library</folder>
+		<folder>language</folder>
 		<folder>vendor</folder>
 	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_system_rtad_jdump.ini</language>
+		<language tag="en-GB">language/en-GB.plg_system_rtad_jdump.sys.ini</language>
+		<language tag="ru-RU">language/ru-RU.plg_system_rtad_jdump.ini</language>
+		<language tag="ru-RU">language/ru-RU.plg_system_rtad_jdump.sys.ini</language>
+	</languages>
 	<config>
 		<fields name="params">
-			<fieldset name="basic">
-				<field name="mootools" type="radio" class="btn-group" default="1" description="Mootools in site" label="Mootools">
-                    <option value="0">Disable</option>
-                    <option value="1">Enable</option>
+			<fieldset name="other" label="PLG_SYSTEM_RTAD_JDUMP_OTHER_LABEL">
+				<field name="jdump_use_error_reporting" type="list" default="1" label="PLG_SYSTEM_RTAD_JDUMP_OTHER_USE_ERROR_REPORTING_LABEL">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
 				</field>
-                <field name="jquery" type="radio" class="btn-group" default="1" description="jQuery in site" label="jQuery">
-                    <option value="0">Disable</option>
-                    <option value="1">Enable</option>
+				<field name="jdump_use_error_reporting_level" type="list" default="development" label="PLG_SYSTEM_RTAD_JDUMP_OTHER_USE_ERROR_REPORTING_LEVEL_LABEL" showon="jdump_use_error_reporting:1">
+					<option value="default">PLG_SYSTEM_RTAD_JDUMP_OTHER_USE_ERROR_REPORTING_LEVEL_DEFAULT</option>
+					<option value="simple">PLG_SYSTEM_RTAD_JDUMP_OTHER_USE_ERROR_REPORTING_LEVEL_SIMPLE</option>
+					<option value="maximum">PLG_SYSTEM_RTAD_JDUMP_OTHER_USE_ERROR_REPORTING_LEVEL_MAXIMUM</option>
+					<option value="development">PLG_SYSTEM_RTAD_JDUMP_OTHER_USE_ERROR_REPORTING_LEVEL_DEVELOPMENT</option>
+				</field>
+				<field name="jdump_show_notice" type="radio" class="btn-group" default="1" label="PLG_SYSTEM_RTAD_JDUMP_OTHER_USE_ERROR_REPORTING_NOTICE_LABEL">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+				</field>
+			</fieldset>
+			<fieldset name="library" label="PLG_SYSTEM_RTAD_JDUMP_LOADLIBRARY_LABEL">
+				<field name="jdump_lib_mootools" type="radio" class="btn-group" default="1" label="PLG_SYSTEM_RTAD_JDUMP_MOOTOOLS_LABEL">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+				</field>
+                <field name="jdump_lib_jquery" type="radio" class="btn-group" default="1" label="PLG_SYSTEM_RTAD_JDUMP_JQUERY_LABEL">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
                 </field>
-                <field name="bootstrap" type="radio" class="btn-group" default="1" description="Bootstrap in site" label="Bootstrap">
-                    <option value="0">Disable</option>
-                    <option value="1">Enable</option>
+                <field name="jdump_lib_bootstrap" type="radio" class="btn-group" default="1" label="PLG_SYSTEM_RTAD_JDUMP_BOOTSTRAP_LABEL">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
                 </field>
 			</fieldset>
 		</fields>
 	</config>
     <updateservers>
-        <server type="extension" priority="1" name="RTAD Joomla Dump"><![CDATA[https://rtad.ru/joomla/plg_system_rtad_jdump.xml]]></server>
+		<server type="extension" priority="1" name="RTAD Joomla Dump"><![CDATA[https://rtad.ru/joomla-library/plg_system_rtad_jdump.xml]]></server>
     </updateservers>
 </extension>

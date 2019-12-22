@@ -39,6 +39,10 @@
                     <option value="0">JNO</option>
                     <option value="1">JYES</option>
 				</field>
+				<field name="jdump_show_warning" type="radio" class="btn-group" default="1" label="PLG_SYSTEM_RTAD_JDUMP_OTHER_USE_ERROR_REPORTING_WARNING_LABEL">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+				</field>
 			</fieldset>
 			<fieldset name="library" label="PLG_SYSTEM_RTAD_JDUMP_LOADLIBRARY_LABEL">
 				<field name="jdump_lib_mootools" type="radio" class="btn-group" default="1" label="PLG_SYSTEM_RTAD_JDUMP_MOOTOOLS_LABEL">

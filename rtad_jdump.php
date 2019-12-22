@@ -27,8 +27,14 @@ class plgSystemRtad_jdump extends JPlugin {
 		ini_set('display_errors', '1');
 		ini_set('display_startup_errors', '1');
 
-        if( $this->params->get('jdump_show_notice', 0) == 0 ){
+        if( $this->params->get('jdump_show_notice', 0) == 0 && $this->params->get('jdump_show_warning', 0) == 1 ){
 			error_reporting(E_ALL & ~E_NOTICE);
+        }
+        if( $this->params->get('jdump_show_warning', 0) == 0 && $this->params->get('jdump_show_notice', 0) == 1 ){
+			error_reporting(E_ALL & ~E_WARNING);
+        }
+        if( $this->params->get('jdump_show_warning', 0) == 0 && $this->params->get('jdump_show_notice', 0) == 0 ){
+        	error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
         }
 
         if( $this->params->get('jdump_use_error_reporting', 1) == 1 ){

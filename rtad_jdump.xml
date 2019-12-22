@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="3.0" type="plugin" group="system" method="upgrade">
+<extension type="plugin" version="3.0" group="system" method="upgrade">
 	<name>plg_system_rtad_jdump</name>
-	<author>Vladimir 'def' Titov.</author>
+	<author>Vladimir 'def' Titov</author>
 	<creationDate>December 2019</creationDate>
-	<copyright>(c) Vladimir Titov 2018</copyright>
-	<license>https://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<copyright>Copyright (C) 2019 Vladimir Titov. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<authorEmail>vvatitv@gmail.com</authorEmail>
 	<authorUrl>https://rtad.ru</authorUrl>
 	<version>3.0.0</version>

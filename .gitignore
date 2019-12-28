@@ -5,7 +5,6 @@ ehthumbs.db
 ehthumbs_vista.db
 composer.lock
 jdump.zip
-
 # Dump file
 *.stackdump
 

@@ -4,10 +4,10 @@
 	<author>Vladimir 'def' Titov</author>
 	<creationDate>December 2019</creationDate>
 	<copyright>Copyright (C) 2019 Vladimir Titov. All rights reserved.</copyright>
-	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<license>MIT License</license>
 	<authorEmail>vvatitv@gmail.com</authorEmail>
 	<authorUrl>https://rtad.ru</authorUrl>
-	<version>3.0.0</version>
+	<version>3.0.1</version>
 	<description>PLG_SYSTEM_RTAD_JDUMP_DESCRIPTION</description>
 	<files>
 		<filename plugin="rtad_jdump">rtad_jdump.php</filename>
@@ -61,6 +61,6 @@
 		</fields>
 	</config>
     <updateservers>
-		<server type="extension" priority="1" name="RTAD Joomla Dump"><![CDATA[https://rtad.ru/joomla-library/plg_system_rtad_jdump.xml]]></server>
+		<server type="extension" priority="1" name="System - RTAD jdump"><![CDATA[https://raw.githubusercontent.com/vvatitv/jDump/master/update.xml]]></server>
     </updateservers>
 </extension>

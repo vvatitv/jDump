@@ -7,7 +7,7 @@
 	<license>MIT License</license>
 	<authorEmail>vvatitv@gmail.com</authorEmail>
 	<authorUrl>https://rtad.ru</authorUrl>
-	<version>3.0.1</version>
+	<version>3.0.2</version>
 	<description>PLG_SYSTEM_RTAD_JDUMP_DESCRIPTION</description>
 	<files>
 		<filename plugin="rtad_jdump">rtad_jdump.php</filename>

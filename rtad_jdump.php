@@ -34,7 +34,7 @@ class plgSystemRtad_jdump extends JPlugin {
 			error_reporting(E_ALL & ~E_WARNING);
         }
         if( $this->params->get('jdump_show_warning', 0) == 0 && $this->params->get('jdump_show_notice', 0) == 0 ){
-        	error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+        	error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING & ~E_DEPRECATED);
         }
 
         if( $this->params->get('jdump_use_error_reporting', 1) == 1 ){
